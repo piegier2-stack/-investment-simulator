@@ -1,2 +1,27 @@
-# -investment-simulator
-Investment simulation web app
+# 積立元本かんたん計算
+
+毎月の積立額と積立年数から、積立元本を計算するシンプルなWebアプリです。外部APIやビルドツールは使用せず、iPhoneのSafariを含むスマートフォンで使いやすい画面にしています。
+
+## 実行方法
+
+リポジトリのルートディレクトリで、次のコマンドを実行します。
+
+```bash
+python3 -m http.server 8000
+```
+
+ブラウザで <http://localhost:8000> を開いてください。サーバーを停止する場合は `Ctrl+C` を押します。
+
+## テスト
+
+Node.js 18以降で次のコマンドを実行します。
+
+```bash
+npm test
+```
+
+## 計算式
+
+```text
+積立元本 = 毎月の積立額 × 12 × 積立年数
+```
